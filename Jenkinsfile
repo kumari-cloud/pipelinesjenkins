@@ -1,5 +1,4 @@
-pipeline
-{
+pipeline{
     agent any 
     
     stages {
@@ -7,6 +6,6 @@ pipeline
         steps {
             echo 'cjbwc'
         }
-    }
     
+    }
 }
