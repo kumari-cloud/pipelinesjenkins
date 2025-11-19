@@ -1,13 +1,9 @@
-pipeline 
-{
+pipeline{
     agent any
     stages {
-        stage ("stepage1 for git ooull") {
-
-        
+        stage ('Build')
         steps {
-            sh 'hostname -i'
-        }
+            echo "hii"
         }
     }
 }
