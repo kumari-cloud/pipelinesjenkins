@@ -1,12 +1,22 @@
 pipeline {
-    agent {
-        label 'any'
-        }
-    
+    agent any
     stages {
-        stage ('label-slave') {
+        stage ('first build') {
             steps {
-            sh 'hostname -i'}
+                echo "hello"
+            }
+        }
+        stage ('second build') {
+            steps {
+                script {
+                    def course = "zure"
+                    if (course == zure)    
+                    println ("success ${course}")
+                }   
+                    else {
+                    print "no"}
+                }
+            }
         }
     }
 }
