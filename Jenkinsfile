@@ -12,7 +12,7 @@ pipeline {
                     def course = "zure"
                     if (course == zure)    
                     println ("success ${course}")
-                }   
+                   
                     else {
                     print "no"}
                 }
