@@ -1,22 +1,12 @@
-pipeline{
-    agent any 
-    
-    stages {
-        stage ('Build') {
-        steps {
-            echo 'cjbwc'
-        }
-        }
-    }
-}
-
 pipeline {
-    agent any 
-
+    agent any
     stages {
-        stage('Build') {  
-            steps {
-                echo 'byee'
+        stage ('first build') {
+            steps{
+                retry (3) {
+                echo "this is success"
+                error "this is failure"
+            }
             }
         }
     }
