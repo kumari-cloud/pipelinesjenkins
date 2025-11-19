@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     def course = "zure"
-                    if (course == zure)    
+                    if (course == "zure")    
                     println ("success ${course}")
                    
                     else {
