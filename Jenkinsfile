@@ -1,13 +1,12 @@
 pipeline {
-    agent any
+    agent {
+        label 'any'
+        }
+    
     stages {
-        stage ('first build') {
+        stage ('label-slave') {
             steps {
-                retry (3) {
-                echo "this is success"
-                error "this is failure"
-            }
-            }
+            sh 'hostname -i'}
         }
     }
 }
